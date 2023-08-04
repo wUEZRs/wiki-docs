@@ -6,22 +6,18 @@ date: 2019-11-18T04:08:41.158Z
 tags: setup, guide
 ---
 
-This guide details the step-by-step procedure to install Wiki.js on an **Azure Web App** with an **Azure Database for PostgreSQL**.
+This guide details the step-by-step procedure to install Wiki.js on an **Azure Web App** with an **Azure Database for PostgreSQL flexible server**.
 
 # 1. Database
 
 We'll first create the database for our wiki.
 
-While it's possible to host the database alongside the application on the Azure Web App, this is not recommended as it will impact performance and is not scalable.
-
 ## 1.1 Create Database
 
-1. Create a new resource, search for **Azure Database for PostgreSQL** and click **Create**.
-1. Select **Single server**
-1. Fill in the server details.
-	- You must select a version of **9.6 or later**.
-  	- The minimum server size is **Basic** with **1 vCore**, however you cannot upgrade to **General Purpose** afterwards if you choose Basic.
-1. Finish by creating the resource.
+1. Create a new resource, search for **Azure Database for PostgreSQL flexible server** and click **Create**.
+2. Select **Single server**
+3. Fill in the server details.
+4. Finish by creating the resource.
 
 ## 1.2 Configure Database
 
